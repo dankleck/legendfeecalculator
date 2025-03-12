@@ -14,7 +14,7 @@
         <h3>Fee Calculator</h3>
         <label class="aum-label">Total Investable Assets</label>
         <input type="text" id="aum" placeholder="Enter Your Total Investable Assets" value="" aria-label="Enter your assets under management (AUM)" oninput="formatCurrencyInput()" />
-        <p class="aum-note">Our minimum annual fee is $3,000</p>
+        <p align="left" class="aum-note">Our minimum annual fee is $3,000</p>
         
         <div class="button-row">
             <button onclick="setAUM(500000)" aria-label="Set AUM to $500,000">$500,000</button>
@@ -25,7 +25,7 @@
 
         <input type="range" id="aumSlider" class="slider" min="250000" max="20000000" step="10000" value="1000000" aria-label="Adjust your assets under management using the slider" />
         
-        <p id="sliderNote">Use the slider to adjust the asset amount</p>
+        <p align="left"  id="sliderNote">Use the slider to adjust the asset amount</p>
         
         <button onclick="calculateFee()" aria-label="Click to calculate the fee">Calculate Fee</button>
         
