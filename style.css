@@ -1,0 +1,93 @@
+body { 
+    font-family: "Roboto", "Lato", sans-serif; 
+    text-align: center; 
+    padding: 20px; 
+    margin: 0; 
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
+
+.container { 
+    max-width: 400px; 
+    margin: auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button, output { 
+    margin-top: 10px; 
+    width: 100%; 
+    padding: 10px; 
+    font-size: 16px; 
+    text-align: center;
+}
+
+.slider { 
+    width: 100%; 
+    appearance: none;
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #428642;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+}
+
+button { 
+    background-color: #428642; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover { 
+    background-color: #366b34; 
+    transform: scale(1.05);
+}
+
+#feeOutput {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+#divider {
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+#scheduleButton { 
+    display: none; 
+    margin-top: 15px; 
+    border-radius: 6px;
+    background-color: #006bb3;
+    font-size: 18px;
+}
+
+#scheduleButton:hover {
+    background-color: #004a80;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size: 0.8em;
+}
