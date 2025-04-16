@@ -1,3 +1,5 @@
+// Updated April 16 3:13pm
+
 let feeVisible = false;
 let feeCalculated = false;
 
@@ -89,7 +91,7 @@ function calculateFee() {
     document.getElementById('feeOutput').innerText = `Annual Fee: ${formatCurrency(totalFee)}`;
     const averageFeePercent = ((totalFee / amount) * 100).toFixed(2);
     document.getElementById('feeBreakdown').innerHTML =
-        `<strong>Fee Breakdown by xTier:</strong><br><br>` +
+        `<strong>Fee Breakdown by Tier:</strong><br><br>` +
         `${breakdownText.trim().replace(/\n/g, '<br>')}<br><br>` +
         `<em>Average Fee Percent:</em> ${averageFeePercent}%`;
 
