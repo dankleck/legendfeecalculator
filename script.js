@@ -89,8 +89,8 @@ function calculateFee() {
     document.getElementById('feeOutput').innerText = `Annual Fee: ${formatCurrency(totalFee)}`;
     const averageFeePercent = ((totalFee / amount) * 100).toFixed(2);
     document.getElementById('feeBreakdown').innerHTML =
-        `<strong>Fee Breakdown by Tier:</strong><br>` +
-        `${breakdownText.trim().replace(/\n/g, '<br>')}<br>` +
+        `<strong>Fee Breakdown by Tier:</strong><br><br>` +
+        `${breakdownText.trim().replace(/\n/g, '<br>')}<br><br>` +
         `<em>Average Fee Percent:</em> ${averageFeePercent}%`;
 
     let scheduleButton = document.getElementById('scheduleButton');
