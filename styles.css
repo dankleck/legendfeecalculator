@@ -1,3 +1,5 @@
+//updated 4/16/25 3:31 pm
+
 body { 
     font-family: "Roboto", "Lato", sans-serif; 
     text-align: center; 
@@ -132,4 +134,17 @@ h3 {
 .superscript {
     vertical-align: super;
     font-size: 0.8em;
+}
+.container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
