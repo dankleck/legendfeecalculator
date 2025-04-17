@@ -1,4 +1,4 @@
-// Updated April 17 9:40am
+// Updated April 16 3:13pm
 
 let feeVisible = false;
 let feeCalculated = false;
@@ -119,4 +119,3 @@ function formatCurrency(amount) {
 function formatPercentage(rate) {
     return `${(rate * 100).toFixed(2)}%`;
 }
-
