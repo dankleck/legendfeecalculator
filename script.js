@@ -1,4 +1,4 @@
-// Updated April 16 3:13pm
+// Updated April 17 9:38am
 
 let feeVisible = false;
 let feeCalculated = false;
@@ -119,3 +119,19 @@ function formatCurrency(amount) {
 function formatPercentage(rate) {
     return `${(rate * 100).toFixed(2)}%`;
 }
+
+
+
+
+
+<script>
+  function sendHeight() {
+    const height = document.body.scrollHeight;
+    window.parent.postMessage({ type: 'resize-iframe', height }, '*');
+  }
+
+  // Send height on load and when DOM changes
+  window.addEventListener('load', sendHeight);
+  const observer = new MutationObserver(sendHeight);
+  observer.observe(document.body, { childList: true, subtree: true });
+</script>
